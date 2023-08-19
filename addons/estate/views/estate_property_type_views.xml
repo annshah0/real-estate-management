@@ -1,0 +1,24 @@
+<odoo>
+
+    <record id="estate_property_type_action" model="ir.actions.act_window">
+        <field name="name">Property Types</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">estate.property.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create a property type</p>
+        </field>
+    </record>
+
+    <menuitem id="menu_settings_root"
+              name="Settings"
+              parent="menu_estate_root"
+              sequence="10"/>
+
+            <menuitem id="menu_estate_property_types"
+                      name="Property Types"
+                      parent="menu_settings_root"
+                      action="estate_property_type_action"
+                      sequence="5"/>
+
+</odoo>
